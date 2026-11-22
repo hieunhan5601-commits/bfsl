@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BFSL đã chuyển về bfsl.bloodflame.app</title>
+<meta name="robots" content="noindex">
+<style>body { margin: 0; padding: 24px 16px; background: #0b0a17; color: #ece8f7; font: 16px/1.55 "Segoe UI", system-ui, sans-serif; } a { color: #4c8dff; }</style>
+</head>
+<body>
+<p>BFSL đã chuyển về <a id="to" href="https://bfsl.bloodflame.app/">bfsl.bloodflame.app</a>. Đang chuyển…</p>
+<script>
+// Mọi địa chỉ cũ dưới /bfsl/ (trang web cũ /bfsl/web/…, bài /bfsl/tu-hung/) sang trang tương ứng trên bfsl.bloodflame.app.
+(function () {
+  var p = location.pathname.replace(/^\/bfsl\/?/, '/').replace(/^\/web(\/|$)/, '/');
+  var url = 'https://bfsl.bloodflame.app' + p + location.search;
+  document.getElementById('to').href = url;
+  location.replace(url);
+})();
+</script>
+</body>
+</html>
